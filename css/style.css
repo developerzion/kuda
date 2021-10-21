@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;600;700;800;900&display=swap');
 
 :root{
     --default-color: #40196d;
@@ -6,7 +6,7 @@
     --box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
 }
 *{
-    font-family: 'Poppins', sans-serif;   
+    font-family: 'Mulish', sans-serif;
     box-sizing: border-box; 
     text-decoration: none;   
     padding: 0; margin: 0;
@@ -153,52 +153,56 @@ header .mobile-section .mobile .wrapper .box a span{
     margin-right: 1rem;
 }
 
-/* section{
-    padding: 2rem 15%;
-} */
-.home .wrapper{
-    margin-top: 16rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
-    padding: 2rem 12%;
-    
-}
-.home .wrapper .box{
-    flex:  1 1 30rem;
-}
-.home .wrapper .box h2{
-    font-size: 7rem;
-    color: var(--default-color);
-    font-weight: bolder; 
-    line-height: 8rem;
-    width: 62rem;
-}
-.home .wrapper .box p{
-    font-size: 2.3rem;
-    width: 52rem;
-    margin-top: 2rem;
-}
-.home .wrapper .box .store{
-    visibility: hidden;
-    margin-top: 4rem;
-    text-align: center;
-}
-.home .wrapper .box .deskop-licence{
-    margin-top: 2rem;
-}
 
-.home .wrapper .box a{
-    display: inline-block;
+.bd-container{
+    margin-top: 16rem ;
+    padding: 0rem 14%;
+}
+.bd-grid{
+    display: grid;
+    gap: 7rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem,1fr));
+    align-items: center;
+}
+.home__container .home__data h2{
+    font-size: 7rem;
+    font-weight: 900;
+    color: var(--default-color);
+}
+.home__container .home__data p{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    line-height: 4rem;
+    color: var(--default-black);
+}
+.home__container .img{
+    width: 100%;
+}
+.home__container .home__data .store{
+    margin-top: 3.5rem;
+    display: none;
+}
+.home__container .home__data .store img{
+    margin-right: 2rem;
+}
+.home__container .home__data .license{
+    margin-top: 2.5rem;
+    display: flex; 
+    margin-right: 2rem;   
+}
+.home__container .home__data a{
     font-size: 2rem;
     font-weight: bold;
     padding: 1.9rem 4.8rem;
     background: var(--default-color);
     color: #fff;
     border-radius: 1rem;
-    margin-top: 2rem;
+    display: inline-block;
+    margin-top: 4rem;
+    
 }
+
 
 
 @media (max-width: 1050px){
@@ -216,30 +220,32 @@ header .mobile-section .mobile .wrapper .box a span{
     }
     header .mobile-section{
         display: inline-block;
-    }
-    .home .wrapper{  
-        padding: 2rem 5%;
-    }
-    .home .wrapper .box h2{
-        font-size: 4rem;
-        text-align: center;
-        font-weight: bolder;
-        width: 43rem;
-        line-height: 5rem;
-    }
-    .home .wrapper .box p{
-        font-size: 2rem;
-        width: 44rem;
-        text-align: center;
-    }
-    .home .wrapper .box a{
-        display: none;
-    }
-    .home .wrapper .box .store{
-        visibility: visible;
-    }
-    
+    }     
 }
 
+@media (max-width: 1070px){
+    .home__container .home__data{
+        text-align: center;
+    }
+    .home__container .home__data h2{
+        font-size: 4.6rem;
+    }
+    .home__container .home__data p{
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    .home__container .home__data .kuda{
+        display: none;
+    }
+    .home__container .home__data .store{
+        display: block;
+    }
+}
+@media (max-width: 594px){
+    .bd-container{        
+        padding: 0rem 9%;
+    }
+  
+}
 
 
