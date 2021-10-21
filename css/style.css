@@ -155,7 +155,7 @@ header .mobile-section .mobile .wrapper .box a span{
 
 
 .bd-container{
-    margin-top: 16rem ;
+    margin-top: 22rem ;
     padding: 0rem 14%;
 }
 .bd-grid{
@@ -200,7 +200,6 @@ header .mobile-section .mobile .wrapper .box a span{
     border-radius: 1rem;
     display: inline-block;
     margin-top: 4rem;
-    
 }
 
 
@@ -242,7 +241,8 @@ header .mobile-section .mobile .wrapper .box a span{
     }
 }
 @media (max-width: 594px){
-    .bd-container{        
+    .bd-container{ 
+        margin-top: 19rem;       
         padding: 0rem 9%;
     }
   
