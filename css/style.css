@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-
 :root{
     --default-color: #40196d;
     --default-black: #35363a;
@@ -12,12 +11,10 @@
     text-decoration: none;   
     padding: 0; margin: 0;
     border: none; outline: none; 
-
 }
 html{
     font-size: 45%;
 }
-
 header{
     top: 0;left: 0;right: 0;
     position: fixed;
@@ -26,6 +23,7 @@ header{
     padding: 3rem 5%;
     justify-content: space-between;
     box-shadow: var(--box-shadow);
+    background: #fff;
 }
 header .navbar{
     display: flex;
@@ -100,7 +98,6 @@ header .bars{
     cursor: pointer;
     color: var(--default-color);
 }
-
 header .mobile-section .mobile.active{
     left: 0;
 }
@@ -156,6 +153,54 @@ header .mobile-section .mobile .wrapper .box a span{
     margin-right: 1rem;
 }
 
+/* section{
+    padding: 2rem 15%;
+} */
+.home .wrapper{
+    margin-top: 16rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2rem 12%;
+    
+}
+.home .wrapper .box{
+    flex:  1 1 30rem;
+}
+.home .wrapper .box h2{
+    font-size: 7rem;
+    color: var(--default-color);
+    font-weight: bolder; 
+    line-height: 8rem;
+    width: 62rem;
+}
+.home .wrapper .box p{
+    font-size: 2.3rem;
+    width: 52rem;
+    margin-top: 2rem;
+}
+.home .wrapper .box .store{
+    visibility: hidden;
+    margin-top: 4rem;
+    text-align: center;
+}
+.home .wrapper .box .deskop-licence{
+    margin-top: 2rem;
+}
+
+.home .wrapper .box a{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.9rem 4.8rem;
+    background: var(--default-color);
+    color: #fff;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+
 @media (max-width: 1050px){
     header{
         padding: 2.3rem 2%;
@@ -171,6 +216,27 @@ header .mobile-section .mobile .wrapper .box a span{
     }
     header .mobile-section{
         display: inline-block;
+    }
+    .home .wrapper{  
+        padding: 2rem 5%;
+    }
+    .home .wrapper .box h2{
+        font-size: 4rem;
+        text-align: center;
+        font-weight: bolder;
+        width: 43rem;
+        line-height: 5rem;
+    }
+    .home .wrapper .box p{
+        font-size: 2rem;
+        width: 44rem;
+        text-align: center;
+    }
+    .home .wrapper .box a{
+        display: none;
+    }
+    .home .wrapper .box .store{
+        visibility: visible;
     }
     
 }
