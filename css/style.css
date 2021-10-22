@@ -12,7 +12,6 @@
     text-decoration: none;   
     padding: 0; margin: 0;
     border: none; outline: none; 
-   
 }
 html{
     font-size: 45%;
@@ -155,8 +154,6 @@ header .mobile-section .mobile .wrapper .box a span{
     border-radius: 50%;
     margin-right: 1rem;
 }
-
-
 .bd-container{
     margin-top: 22rem ;
     padding: 0rem 14%;
@@ -208,8 +205,6 @@ header .mobile-section .mobile .wrapper .box a span{
     display: inline-block;
     margin-top: 4rem;
 }
-
-
 .service-wrapper{
     padding: 0 12%;
     display: grid;
@@ -327,7 +322,7 @@ header .mobile-section .mobile .wrapper .box a span{
 }
 .review-wrapper{
     text-align: center;
-    padding: 10rem 4% 6rem  4%;
+    padding: 9rem 4% 3rem  4%;
 }
 .review-wrapper h1{
     font-size: 5rem;
@@ -335,20 +330,21 @@ header .mobile-section .mobile .wrapper .box a span{
     color: var(--default-color);
 }
 .review-section{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
-    justify-content: center; 
-    gap: 4rem; 
-    align-items: center;
-
+    display: flex;
+    overflow-x: auto;
+    padding: 3rem 2rem 2rem 2rem;
+}
+.review-section::-webkit-scrollbar{
+    width: 0;
 }
 .review-section .box{
-    /* width: 50rem; */
     position: relative;
+    margin-right: 2rem;
     height: 30rem;
+    min-width: 50rem;
     box-shadow: var(--plain-shadow);
     padding: 5rem 3rem 3rem 3rem;
+    border-radius: 1rem;
 }
 .review-section .box p{
     font-size: 1.8rem;
@@ -357,14 +353,12 @@ header .mobile-section .mobile .wrapper .box a span{
     position: absolute;
     display: flex;
     align-items: center;
-    bottom: 2rem;
-    
+    bottom: 2rem;    
 }
 .review-section .box .user img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-
 }
 .review-section .box .user .text{
     width: 50px;
@@ -382,7 +376,6 @@ header .mobile-section .mobile .wrapper .box a span{
     font-size: 1.8rem;
     font-weight: 900;
 }
-
 @media (max-width: 1050px){
     header{
         padding: 2.3rem 2%;
@@ -431,7 +424,6 @@ header .mobile-section .mobile .wrapper .box a span{
     .review-wrapper h1{
         font-size: 3.5rem;
     }
-
     .download-app{
         display: block;
     }
@@ -459,7 +451,6 @@ header .mobile-section .mobile .wrapper .box a span{
     }
     .service-wrapper{
         padding: 0 5%;
-
     }
     .service-wrapper .box span{
         width: 7rem;
@@ -471,6 +462,49 @@ header .mobile-section .mobile .wrapper .box a span{
         color:#522486;
         font-size: 1.9rem;
     }
+
+
+    .review-section .box{
+        position: relative;
+        margin-right: 2rem;
+        max-height: 21rem;
+        min-width: 43rem;
+        box-shadow: var(--plain-shadow);
+        padding: 2.5rem 3rem 4rem 3rem;
+        border-radius: 1rem;
+    }
+    .review-section .box p{
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .review-section .box .user{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        bottom: 2rem;    
+    }
+    .review-section .box .user img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .review-section .box .user .text{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: var(--default-color);
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+        line-height: 50px;
+    }
+    .review-section .box .user span{
+        margin-left: 2rem;
+        font-size: 1.4rem;
+        font-weight: 900;
+    }
+    
 }
 
 
