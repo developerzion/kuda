@@ -203,6 +203,39 @@ header .mobile-section .mobile .wrapper .box a span{
 }
 
 
+.service-wrapper{
+    padding: 0 14%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12rem;
+}
+.service-wrapper .box{
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 4rem 4rem;
+    border-radius: 1rem;
+}
+.service-wrapper .box span{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    background: #e0e2f1;
+    border-radius: 50%;
+    color:#522486;
+    font-size: 2rem;
+}
+.service-wrapper .box p{
+    font-size: 2.1rem;
+    color: var(--default-color);
+    font-weight: 800;
+    margin-top: 2rem;
+}
+
+
 
 @media (max-width: 1050px){
     header{
