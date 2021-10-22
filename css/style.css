@@ -24,6 +24,7 @@ header{
     justify-content: space-between;
     box-shadow: var(--box-shadow);
     background: #fff;
+    z-index: 10000;
 }
 header .navbar{
     display: flex;
@@ -275,9 +276,6 @@ header .mobile-section .mobile .wrapper .box a span{
     display: inline-block;
     margin-top: 4rem;
 }
-
-
-
 .download-app{
     width: 100%;
     height: 11rem;
