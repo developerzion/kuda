@@ -327,6 +327,15 @@ header .mobile-section .mobile .wrapper .box a span{
     justify-self: center;
 }
 
+.review-wrapper{ 
+    text-align: center;
+    padding: 10rem 4% 15rem  4%;
+}
+.review-wrapper h1{
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--default-color);
+}
 
 
 @media (max-width: 1050px){
@@ -374,6 +383,9 @@ header .mobile-section .mobile .wrapper .box a span{
         font-size: 1.9rem;
         line-height: 3rem;
     }
+    .review-wrapper h1{
+        font-size: 3.5rem;
+    }
 }
 @media (max-width: 594px){
     .bd-container{ 
@@ -406,6 +418,7 @@ header .mobile-section .mobile .wrapper .box a span{
         color:#522486;
         font-size: 1.5rem;
     }
+    
     .download-app{
         display: block;
     }
