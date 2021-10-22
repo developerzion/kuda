@@ -242,6 +242,7 @@ header .mobile-section .mobile .wrapper .box a span{
     background: #eff1ff;
     position: fixed;
     bottom: 0; left: 0; right: 0;
+    display: none;
 }
 .download-app .app-box{
     display: flex;
@@ -344,6 +345,10 @@ header .mobile-section .mobile .wrapper .box a span{
         color:#522486;
         font-size: 1.5rem;
     }
+    .download-app{
+        display: block;
+    }
+
   
 }
 
