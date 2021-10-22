@@ -337,7 +337,7 @@ header .mobile-section .mobile .wrapper .box a span{
 .review-section::-webkit-scrollbar{
     width: 0;
 }
-.review-section .box{
+.review .review-section .box{
     position: relative;
     margin-right: 2rem;
     height: 30rem;
@@ -378,12 +378,27 @@ header .mobile-section .mobile .wrapper .box a span{
     font-weight: 900;
 }
 
+.support{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 6rem;
+    padding: 0 1rem;
+}
+.support img{
+    width: 90px;
+    filter: grayscale(100%);
+}
+.support img:hover{
+    filter: none;
+}
+
 @keyframes srollreview {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-50%, 0);
+    100% { 
+        transform: translateX(-90.6666%);  
     }
 }
 @media (max-width: 1050px){
@@ -477,7 +492,7 @@ header .mobile-section .mobile .wrapper .box a span{
     .review-section .box{
         position: relative;
         margin-right: 2rem;
-        max-height: 21rem;
+        max-height: 25rem;
         min-width: 43rem;
         box-shadow: var(--plain-shadow);
         padding: 2.5rem 3rem 4rem 3rem;
@@ -513,6 +528,9 @@ header .mobile-section .mobile .wrapper .box a span{
         margin-left: 2rem;
         font-size: 1.4rem;
         font-weight: 900;
+    }
+    .support img{
+        width: 50px;
     }
     
 }
