@@ -322,7 +322,7 @@ header .mobile-section .mobile .wrapper .box a span{
 }
 .review-wrapper{
     text-align: center;
-    padding: 9rem 4% 3rem  4%;
+    padding: 20rem 4% 3rem  4%;
 }
 .review-wrapper h1{
     font-size: 5rem;
@@ -345,6 +345,7 @@ header .mobile-section .mobile .wrapper .box a span{
     box-shadow: var(--plain-shadow);
     padding: 5rem 3rem 3rem 3rem;
     border-radius: 1rem;
+    animation: srollreview 10s linear infinite;
 }
 .review-section .box p{
     font-size: 1.8rem;
@@ -375,6 +376,15 @@ header .mobile-section .mobile .wrapper .box a span{
     margin-left: 2rem;
     font-size: 1.8rem;
     font-weight: 900;
+}
+
+@keyframes srollreview {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
 }
 @media (max-width: 1050px){
     header{
