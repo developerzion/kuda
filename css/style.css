@@ -386,6 +386,13 @@ header .mobile-section .mobile .wrapper .box a span{
     .review-wrapper h1{
         font-size: 3.5rem;
     }
+
+    .download-app{
+        display: block;
+    }
+    .re-arrange{
+        order: 1;
+    }
 }
 @media (max-width: 594px){
     .bd-container{ 
@@ -405,9 +412,7 @@ header .mobile-section .mobile .wrapper .box a span{
         font-size: 1.7rem;
         align-items: center;
     }
-    .re-arrange{
-        order: 1;
-    }
+   
     .service-wrapper .box span{
         width: 5rem;
         height: 3.2rem;
@@ -418,12 +423,6 @@ header .mobile-section .mobile .wrapper .box a span{
         color:#522486;
         font-size: 1.5rem;
     }
-    
-    .download-app{
-        display: block;
-    }
-
-  
 }
 
 
