@@ -6,7 +6,7 @@ function togglenav(x){
 const sr = ScrollReveal({
     origin: 'bottom',
     distance: '30px',
-    duration: 2000,
+    duration: 1500,
     reset: true
 });
 
