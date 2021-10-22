@@ -217,6 +217,7 @@ header .mobile-section .mobile .wrapper .box a span{
     box-shadow: var(--box-shadow);
     padding: 4rem 4rem;
     border-radius: 1rem;
+    font-size: 2.1rem;
 }
 .service-wrapper .box span{
     width: 5rem;
@@ -229,7 +230,7 @@ header .mobile-section .mobile .wrapper .box a span{
     font-size: 2rem;
 }
 .service-wrapper .box p{
-    font-size: 2.1rem;
+    
     color: var(--default-color);
     font-weight: 800;
     margin-top: 2rem;
@@ -277,6 +278,26 @@ header .mobile-section .mobile .wrapper .box a span{
     .bd-container{ 
         margin-top: 19rem;       
         padding: 0rem 9%;
+    }
+    .service-wrapper{
+        margin-top: 6rem;
+    }
+    .service-wrapper .box{
+        display: flex;
+        gap: 2rem;
+        padding: 2rem 2rem;
+        font-size: 1.7rem;
+        align-items: center;
+    }
+    .service-wrapper .box span{
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        text-align: center;
+        background: #e0e2f1;
+        border-radius: 50%;
+        color:#522486;
+        font-size: 1.5rem;
     }
   
 }
