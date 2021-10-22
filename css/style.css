@@ -3,6 +3,7 @@
 :root{
     --default-color: #40196d;
     --default-black: #35363a;
+    --plain-shadow: 0 0 25px rgb(0 0 0 / 6%);
     --box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
 }
 *{
@@ -11,6 +12,7 @@
     text-decoration: none;   
     padding: 0; margin: 0;
     border: none; outline: none; 
+   
 }
 html{
     font-size: 45%;
@@ -209,17 +211,17 @@ header .mobile-section .mobile .wrapper .box a span{
 
 
 .service-wrapper{
-    padding: 0 14%;
+    padding: 0 12%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    gap: 4rem;
+    gap: 1.5rem;
     align-items: center;
     justify-content: center;
     margin-top: 12rem;
 }
 .service-wrapper .box{
     background: #fff;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--plain-shadow);
     padding: 4rem 4rem;
     border-radius: 1rem;
     font-size: 2.1rem;
@@ -320,21 +322,66 @@ header .mobile-section .mobile .wrapper .box a span{
     font-size: 1.5rem;
     color: rgb(236, 202, 9);
 }
-
 .re-arrange{
     justify-self: center;
 }
-
-.review-wrapper{ 
+.review-wrapper{
     text-align: center;
-    padding: 10rem 4% 15rem  4%;
+    padding: 10rem 4% 6rem  4%;
 }
 .review-wrapper h1{
     font-size: 5rem;
     font-weight: 900;
     color: var(--default-color);
 }
+.review-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    justify-content: center; 
+    gap: 4rem; 
+    align-items: center;
 
+}
+.review-section .box{
+    /* width: 50rem; */
+    position: relative;
+    height: 30rem;
+    box-shadow: var(--plain-shadow);
+    padding: 5rem 3rem 3rem 3rem;
+}
+.review-section .box p{
+    font-size: 1.8rem;
+}
+.review-section .box .user{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 2rem;
+    
+}
+.review-section .box .user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.review-section .box .user .text{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--default-color);
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    line-height: 50px;
+}
+.review-section .box .user span{
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
 
 @media (max-width: 1050px){
     header{
