@@ -158,6 +158,10 @@ header .mobile-section .mobile .wrapper .box a span{
     margin-top: 22rem ;
     padding: 0rem 14%;
 }
+.all-container{
+    margin-top: 15rem ;
+    padding: 0rem 14%;
+}
 .bd-grid{
     display: grid;
     gap: 7rem;
@@ -229,12 +233,50 @@ header .mobile-section .mobile .wrapper .box a span{
     color:#522486;
     font-size: 2rem;
 }
-.service-wrapper .box p{
-    
+.service-wrapper .box p{    
     color: var(--default-color);
     font-weight: 800;
     margin-top: 2rem;
 }
+
+.account__container .account__data h2{
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--default-color);
+}
+.account__container .account__data p{
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    line-height: 4rem;
+    color: var(--default-black);
+}
+.account__container img{
+    width: 100%;
+}
+.account__container .account__data .store{
+    margin-top: 3.5rem;
+    display: none;
+}
+.account__container .account__data .store img{
+    margin-right: 2rem;
+}
+.account__container .account__data .license{
+    margin-top: 2.5rem;
+    display: flex; 
+    margin-right: 2rem;   
+}
+.account__container .account__data a{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--default-color);
+    text-decoration: underline;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-top: 4rem;
+}
+
+
 
 .download-app{
     width: 100%;
@@ -281,6 +323,10 @@ header .mobile-section .mobile .wrapper .box a span{
     color: rgb(236, 202, 9);
 }
 
+.re-arrange{
+    justify-self: center;
+}
+
 
 
 @media (max-width: 1050px){
@@ -318,10 +364,23 @@ header .mobile-section .mobile .wrapper .box a span{
     .home__container .home__data .store{
         display: block;
     }
+    .account__container .account__data{
+        text-align: center;
+    }
+    .account__container .account__data h2{
+        font-size: 3.5rem;
+    }
+    .account__container .account__data p{
+        font-size: 1.9rem;
+        line-height: 3rem;
+    }
 }
 @media (max-width: 594px){
     .bd-container{ 
         margin-top: 19rem;       
+        padding: 0rem 9%;
+    }
+    .all-container{
         padding: 0rem 9%;
     }
     .service-wrapper{
@@ -334,7 +393,9 @@ header .mobile-section .mobile .wrapper .box a span{
         font-size: 1.7rem;
         align-items: center;
     }
-
+    .re-arrange{
+        order: 1;
+    }
     .service-wrapper .box span{
         width: 5rem;
         height: 3.2rem;
