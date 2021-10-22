@@ -236,6 +236,50 @@ header .mobile-section .mobile .wrapper .box a span{
     margin-top: 2rem;
 }
 
+.download-app{
+    width: 100%;
+    height: 11rem;
+    background: #eff1ff;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+}
+.download-app .app-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.download-app .app-box a.gkuda{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    background: var(--default-color);
+    color: #fff;
+    border-radius: 1rem;
+    margin-top: 2.3rem;
+    margin-right: 3rem;
+}
+.download-app .app-box .kuda-rate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.download-app .app-box .kuda-rate .rate{
+    margin-left: 3rem;
+}
+.download-app .app-box .kuda-rate .rate p{
+    line-height: 2.6rem;
+}
+.download-app .app-box .kuda-rate .rate p:nth-child(1){
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--default-color);
+    margin-top: 1.5rem;
+}
+.download-app .app-box .kuda-rate .rate p:nth-child(2){
+    font-size: 1.5rem;
+    color: rgb(236, 202, 9);
+}
+
 
 
 @media (max-width: 1050px){
