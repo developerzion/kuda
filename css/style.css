@@ -289,10 +289,11 @@ header .mobile-section .mobile .wrapper .box a span{
         font-size: 1.7rem;
         align-items: center;
     }
+
     .service-wrapper .box span{
         width: 5rem;
-        height: 5rem;
-        line-height: 5rem;
+        height: 3.2rem;
+        line-height: 3.2rem;
         text-align: center;
         background: #e0e2f1;
         border-radius: 50%;
