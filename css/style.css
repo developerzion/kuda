@@ -522,13 +522,38 @@ header .mobile-section .mobile .wrapper .box a span{
 .app-container .connect img{
     margin-right: 1rem;
 }
-
+.app-container .copywright{
+    margin-top: 5rem;
+}
 .app-container .copywright p{
     color: rgb(192, 187, 187);
     font-size: 1.7rem;
     margin-bottom: 3rem;
     line-height: 2.5rem;
 }
+.app-container .contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -10rem;
+}
+.app-container .contact .contact-sec h2{
+    font-size: 2.5rem;
+    color: var(--default-color);
+}
+.app-container .contact .contact-sec p{
+    padding: 2rem 0;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--default-black);
+}
+.app-container .contact .contact-sec p a{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--default-color); 
+    text-decoration: underline;
+}
+
 .app-container .edu{
     text-align: center;
     font-size: 1.5rem;
@@ -752,9 +777,25 @@ header .mobile-section .mobile .wrapper .box a span{
     }
     .app-container .copywright{
         padding: 0 3%;
-        margin-top: -13rem;
-    }.app-container .edu{
-
+        margin-top: 3rem;
+    }
+    .app-container .contact{
+        padding: 0 4%;
+        gap: 1rem;
+    }
+    .app-container .contact .contact-sec:nth-of-type(1){
+        width: 100%;
+    }
+    .app-container .contact .contact-sec h2{
+        font-size: 2rem;
+    }
+    .app-container .contact .contact-sec p{
+        font-size: 1.6rem;
+    }
+    .app-container .contact .contact-sec p a{
+        font-size: 1.6rem;
+    }
+    .app-container .edu{
         margin-bottom: 10rem;
     }
     
