@@ -464,6 +464,9 @@ header .mobile-section .mobile .wrapper .box a span{
     margin-right: 2rem; 
     gap: 1rem;  
 }
+.getapp .footer__container .footer__data .appstore{
+    display: none;
+}
 .footer .footer-wrapper{
     display: flex;
     justify-content: space-between;
@@ -605,6 +608,10 @@ header .mobile-section .mobile .wrapper .box a span{
     }
     .getapp .footer__container{
         padding: 3rem 2rem;
+    }
+    .getapp .footer__container .footer__data .appstore{
+        display: inline-block;
+        padding: 2rem 0;
     }
    
 }
