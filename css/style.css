@@ -159,6 +159,10 @@ header .mobile-section .mobile .wrapper .box a span{
     padding: 0rem 14%;
 }
 .app-container{
+    margin-top: 15rem ;
+    padding: 0rem 14%;
+}
+.getapp-container{
     margin-top: 22rem ;
     padding: 0rem 14%;
 }
@@ -510,6 +514,28 @@ header .mobile-section .mobile .wrapper .box a span{
     margin-right: 3rem;
     display: inline-block;
 }
+.app-container .connect{
+    display: flex;
+    margin-top: -12rem;
+    margin-bottom: 20rem;
+}
+.app-container .connect img{
+    margin-right: 1rem;
+}
+
+.app-container .copywright p{
+    color: rgb(192, 187, 187);
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+    line-height: 2.5rem;
+}
+.app-container .edu{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(192, 187, 187);;
+    border-top: 1px solid rgb(216, 214, 214);
+    padding: 3rem 0;
+}
 
 @keyframes srollreview {
     100% { 
@@ -613,6 +639,13 @@ header .mobile-section .mobile .wrapper .box a span{
         display: inline-block;
         padding: 2rem 0;
     }
+    .app-container .connect{
+        margin-top: -17rem;
+        padding: 0 5%;
+    }
+    .app-container .connect img{        
+        width: 100px;
+    }
    
 }
 @media (max-width: 594px){
@@ -702,7 +735,7 @@ header .mobile-section .mobile .wrapper .box a span{
         order: 1;
     }
     .footer .footer-wrapper{
-        padding: 0 10% 3rem  10%;
+        padding: 0 5% 3rem  5%;
         gap: 0;
     }
     .footer .footer-wrapper .footer-content{
@@ -716,6 +749,13 @@ header .mobile-section .mobile .wrapper .box a span{
     
     .review .review-section .box{
         animation: srollreview 70s linear infinite;
+    }
+    .app-container .copywright{
+        padding: 0 3%;
+        margin-top: -13rem;
+    }.app-container .edu{
+
+        margin-bottom: 10rem;
     }
     
     @keyframes srollreview {
