@@ -439,6 +439,28 @@ header .mobile-section .mobile .wrapper .box a span{
     color: var(--default-color);
 }
 
+.footer .footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    /* grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr)); */
+    margin-bottom: 20rem;
+    padding: 13rem 15% 3rem  15%;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+}
+.footer .footer-wrapper .footer-content h2{
+    font-size: 2rem;
+    color: var(--default-color);
+    margin-bottom: 1rem;
+}
+.footer .footer-wrapper .footer-content a{
+    display: block;
+    font-size: 1.9rem;
+    color: #000;
+    padding: 1.5rem 0;
+}
 
 
 @keyframes srollreview {
@@ -462,6 +484,10 @@ header .mobile-section .mobile .wrapper .box a span{
     header .mobile-section{
         display: inline-block;
     }  
+    .footer .footer-wrapper .footer-content:nth-of-type(1){
+        width: 100%;
+        margin-left: -2rem;
+    }
 }
 
 @media (max-width: 1070px){
@@ -598,10 +624,23 @@ header .mobile-section .mobile .wrapper .box a span{
     .re-arrange{
         order: 1;
     }
+    .footer .footer-wrapper{
+        padding: 0 4% 3rem  4%;
 
+    }
+    .footer .footer-wrapper .footer-content{
+        width: 20rem;
+    }
+    .footer .footer-wrapper .footer-content a{
+        display: block;
+        font-size: 1.6rem;
+   
+    }
+    
     .review .review-section .box{
         animation: srollreview 70s linear infinite;
     }
+    
     @keyframes srollreview {
         100% { 
             transform: translateX(-500%);  
