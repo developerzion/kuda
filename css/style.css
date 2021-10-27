@@ -158,6 +158,10 @@ header .mobile-section .mobile .wrapper .box a span{
     margin-top: 22rem ;
     padding: 0rem 14%;
 }
+.app-container{
+    margin-top: 22rem ;
+    padding: 0rem 14%;
+}
 .all-container{
     margin-top: 15rem ;
     padding: 0rem 14%;
@@ -168,35 +172,40 @@ header .mobile-section .mobile .wrapper .box a span{
     grid-template-columns: repeat(auto-fit, minmax(40rem,1fr));
     align-items: center;
 }
-.home__container .home__data h2{
+.bd-grid-footer{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem,1fr));
+}
+.main__container .home__data h2{
     font-size: 7rem;
     font-weight: 900;
     color: var(--default-color);
 }
-.home__container .home__data p{
+.main__container .home__data p{
     font-size: 2.5rem;
     margin-top: 2rem;
     font-weight: 600;
     line-height: 4rem;
     color: var(--default-black);
 }
-.home__container .img{
+.main__container .img{
     width: 100%;
 }
-.home__container .home__data .store{
+.main__container .home__data .store{
     margin-top: 3.5rem;
     display: none;
 }
-.home__container .home__data .store img{
+.main__container .home__data .store img{
     margin-right: 2rem;
 }
-.home__container .home__data .license{
+.main__container .home__data .license{
     margin-top: 2.5rem;
     display: flex; 
     margin-right: 2rem; 
     gap: 2rem;  
 }
-.home__container .home__data a{
+.main__container .home__data a{
     font-size: 2rem;
     font-weight: bold;
     padding: 1.9rem 4.8rem;
@@ -438,17 +447,31 @@ header .mobile-section .mobile .wrapper .box a span{
     font-weight: 900;
     color: var(--default-color);
 }
-
+.footer{
+    background: #fff;
+}
+.getapp .footer__container{
+    background: #eff1ff;
+    box-shadow: var(--plain-shadow);
+    border-radius: 1rem;
+    padding: 10rem 15rem;
+    height: 60rem;   
+    /* min-width: 40rem; */
+}
+.getapp .footer__container .license{
+    margin-top: 2.5rem;
+    display: flex; 
+    margin-right: 2rem; 
+    gap: 1rem;  
+}
 .footer .footer-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: left;
-    /* grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr)); */
     margin-bottom: 20rem;
-    padding: 13rem 15% 3rem  15%;
+    padding: 13rem 0 0 0;
     flex-wrap: wrap;
     gap: 5rem;
-
 }
 .footer .footer-wrapper .footer-content h2{
     font-size: 2rem;
@@ -463,6 +486,27 @@ header .mobile-section .mobile .wrapper .box a span{
     width: 14rem;
 }
 
+.footer__container .footer__data h2{
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: var(--default-color);
+}
+.footer__container .footer__data p{
+    font-size: 2rem;
+    line-height: 3.5rem;
+    padding: 2rem 0;
+}
+.footer__container a.kuda{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 5rem;
+    background: var(--default-color);
+    color: #fff;
+    border-radius: 1rem;
+    margin-top: 2.3rem;
+    margin-right: 3rem;
+    display: inline-block;
+}
 
 @keyframes srollreview {
     100% { 
@@ -488,24 +532,25 @@ header .mobile-section .mobile .wrapper .box a span{
     .footer .footer-wrapper .footer-content:nth-of-type(1){
         width: 100%;
         margin-left: -2rem;
+        margin-bottom: 4rem;
     }
 }
 
 @media (max-width: 1070px){
-    .home__container .home__data{
+    .main__container .home__data{
         text-align: center;
     }
-    .home__container .home__data h2{
+    .main__container .home__data h2{
         font-size: 4.6rem;
     }
-    .home__container .home__data p{
+    .main__container .home__data p{
         font-size: 2.2rem;
         line-height: 3rem;
     }
-    .home__container .home__data .kuda{
+    .main__container .home__data .kuda{
         display: none;
     }
-    .home__container .home__data .store{
+    .main__container .home__data .store{
         display: block;
     }
     .account__container .account__data{
@@ -545,13 +590,37 @@ header .mobile-section .mobile .wrapper .box a span{
     .our-partner h2{
         font-size: 3.5rem;
     }
-    
+    .illustrator{
+        display: none;
+    }
+    .getapp .footer__container{
+        height: auto;
+
+    }
+    .getapp .footer__container .footer__data{
+        text-align: center;
+    }
+    .getapp .footer__container .footer__data h2{
+        font-size: 3.5rem;
+    }
+    .getapp .footer__container{
+        padding: 3rem 2rem;
+    }
    
 }
 @media (max-width: 594px){
     .bd-container{ 
         margin-top: 19rem;       
         padding: 0rem 9%;
+    }
+
+    .app-container{ 
+        margin-top: 19rem;       
+        padding: 0rem 2%;
+    }
+    .getapp-container{ 
+        margin-top: 11rem;       
+        padding: 0rem 7%;
     }
     .all-container{
         padding: 0rem 9%;
@@ -628,9 +697,7 @@ header .mobile-section .mobile .wrapper .box a span{
     .footer .footer-wrapper{
         padding: 0 10% 3rem  10%;
         gap: 0;
-
     }
-
     .footer .footer-wrapper .footer-content{
         width: 18rem;
     }
