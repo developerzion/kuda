@@ -348,7 +348,7 @@ header .mobile-section .mobile .wrapper .box a span{
     box-shadow: var(--plain-shadow);
     padding: 5rem 3rem 3rem 3rem;
     border-radius: 1rem;
-    animation: srollreview 10s linear infinite;
+    animation: srollreview 25s linear infinite;
 }
 .review-section .box p{
     font-size: 1.8rem;
@@ -429,11 +429,21 @@ header .mobile-section .mobile .wrapper .box a span{
     filter: grayscale(100%);
 }
 
+.package-wrapper{
+    text-align: center;
+    padding: 13rem 4% 3rem  4%;
+}
+.package-wrapper h1{
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--default-color);
+}
+
 
 
 @keyframes srollreview {
     100% { 
-        transform: translateX(-100%);  
+        transform: translateX(-225%);  
     }
 }
 @media (max-width: 1050px){
@@ -587,6 +597,15 @@ header .mobile-section .mobile .wrapper .box a span{
     }
     .re-arrange{
         order: 1;
+    }
+
+    .review .review-section .box{
+        animation: srollreview 70s linear infinite;
+    }
+    @keyframes srollreview {
+        100% { 
+            transform: translateX(-500%);  
+        }
     }
     
     
