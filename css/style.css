@@ -425,6 +425,9 @@ header .mobile-section .mobile .wrapper .box a span{
 .our-partner .partner-flex:nth-child(3){
     gap: 30rem;
 }
+.our-partner .partner-flex img:hover{
+    filter: grayscale(100%);
+}
 
 
 
