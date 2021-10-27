@@ -10,6 +10,6 @@ const sr = ScrollReveal({
     reset: true
 });
 
-sr.reveal(`.account__data`, {
+sr.reveal(`.account__data, .home-sec`, {
     interval: 200
 })
