@@ -486,16 +486,21 @@ header .mobile-section .mobile .wrapper .box a span{
     }   
     .our-partner .partner-flex img{
         max-width: 70px;
+        margin: auto;
+        
     }
     .our-partner .partner-flex{
-        margin: 8rem 0 0 0;
+        margin: 5rem 0 0 0;
         padding: 0rem 10rem;
-        gap: 8rem;        
+        gap: 5rem;    
+        margin-left: -2rem;    
     }
     .our-partner .partner-flex:nth-child(3){
-        margin: 8rem 0 0 0;
+        margin: 4rem 0 0 0;
         padding: 0rem 10rem;
-        gap: 8rem;
+        gap: 6rem;
+        margin-left: -4rem;    
+
     }
     .our-partner h2{
         font-size: 3.5rem;
